@@ -44,7 +44,7 @@ body::before{content:"";position:fixed;inset:-40px;z-index:-1;pointer-events:non
   filter:drop-shadow(0 5px 15px rgba(0,0,0,.35));
 }
 .home-title{
-  margin:0 0 30px;color:#2b3990;font-family:"Dancing Script","Brush Script MT",cursive;
+  margin:0 0 30px;color:#1b7a3a;font-family:"Dancing Script","Brush Script MT",cursive;
   font-size:clamp(2.1rem,5vw,3rem);font-weight:700;font-style:italic;
   text-shadow:0 0 16px rgba(255,255,255,.95)
 }
@@ -84,6 +84,7 @@ body::before{content:"";position:fixed;inset:-40px;z-index:-1;pointer-events:non
 .campaign .number{font-size:.8rem;color:var(--gold);letter-spacing:.14em}
 .campaign h2{margin:10px 0;font-size:1.3rem}
 .campaign p{color:var(--muted);line-height:1.75;margin:0}
+.bottom-back{display:flex;justify-content:center;margin:30px 0 10px}
 .footer-note{text-align:center;color:rgba(29,42,77,.62);font-size:.85rem;margin:45px 0 0}
 /* Nội dung xuất hiện nhẹ nhàng khi người xem cuộn tới */
 .reveal-on-scroll{opacity:0;transform:translateY(30px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1);will-change:opacity,transform}
@@ -306,6 +307,7 @@ body{--pw:min(96vw,460px);--ph:calc(112px + env(safe-area-inset-bottom,0px))}
           <div class="era-copy"><p class="era-year">Chặng 10 · Kỷ niệm</p><h2>Mười năm — Và câu chuyện vẫn tiếp tục</h2><p>Mười năm không chỉ là một cột mốc để nhìn lại, mà còn là lời hẹn cho những hành trình phía trước. Cảm ơn tất cả những thế hệ đã góp sức, góp yêu thương và góp thanh xuân để làm nên VIS. Chặng đường tiếp theo, mong rằng chúng ta vẫn sẽ cùng nhau viết tiếp những điều đẹp đẽ.</p></div>
         </article>
       </div>
+      <div class="bottom-back"><button class="back-button" type="button" data-screen="vis">← Quay lại</button></div>
     </div>
   </section>
 
@@ -361,32 +363,6 @@ body{--pw:min(96vw,460px);--ph:calc(112px + env(safe-area-inset-bottom,0px))}
 
           <article class="cmp">
             <p class="tag">CHIẾN DỊCH 01</p>
-            <h2>Mầm Xuân</h2>
-            <p class="lead">Bắt đầu một năm mới bằng sự sẻ chia và những nụ cười. Tại chiến dịch đây, VIS cùng nhau đến chùa Khai Nguyên, tự tay chuẩn bị những suất cơm cho bà con. Chuyến xe mùa xuân sau đó tiếp tục lăn bánh đến các trung tâm nuôi dưỡng trẻ em, mang theo những món quà nhỏ và tổ chức các trò chơi vui nhộn. Nhìn nụ cười rạng rỡ của các em nhỏ có hoàn cảnh đặc biệt, mùa xuân của VIS dường như trọn vẹn và ý nghĩa hơn bao giờ hết.</p>
-            <div class="pics">
-              <figure class="pic wide" data-label="Ảnh Mầm Xuân 1"><img src="mx1.jpg" alt="Mầm Xuân - ảnh 1" loading="lazy" onerror="this.remove()"></figure>
-              <figure class="pic" data-label="Ảnh Mầm Xuân 2"><img src="mx2.jpg" alt="Mầm Xuân - ảnh 2" loading="lazy" onerror="this.remove()"></figure>
-              <figure class="pic" data-label="Ảnh Mầm Xuân 3"><img src="mx3.jpg" alt="Mầm Xuân - ảnh 3" loading="lazy" onerror="this.remove()"></figure>
-            </div>
-          </article>
-
-          <div class="cut" aria-hidden="true">✂ - - - - - - - - - - - - - - - -</div>
-
-          <article class="cmp">
-            <p class="tag">CHIẾN DỊCH 02</p>
-            <h2>Hè Xanh</h2>
-            <p class="lead">Dấu ấn rực rỡ nhất của tuổi trẻ VIS chính là hành trình 7 ngày 6 đêm trọn vẹn cùng ăn, cùng ở, cùng làm với bà con ở những vùng quê xa xôi. Không ngại lấm lem bùn đất, VISer cùng nhau giúp đỡ bà con biết bao công việc. Để rồi trong đêm Gala cuối cùng, mọi mệt mỏi đều tan biến, chỉ còn lại những lời ca, điệu múa và những cái ôm lưu luyến chẳng nỡ rời xa giữa Đội, bà con và các em nhỏ nơi đây.</p>
-            <div class="pics">
-              <figure class="pic wide" data-label="Ảnh Hè Xanh 1"><img src="hx1.jpg" alt="Hè Xanh - ảnh 1" loading="lazy" onerror="this.remove()"></figure>
-              <figure class="pic" data-label="Ảnh Hè Xanh 2"><img src="hx2.jpg" alt="Hè Xanh - ảnh 2" loading="lazy" onerror="this.remove()"></figure>
-              <figure class="pic" data-label="Ảnh Hè Xanh 3"><img src="hx3.jpg" alt="Hè Xanh - ảnh 3" loading="lazy" onerror="this.remove()"></figure>
-            </div>
-          </article>
-
-          <div class="cut" aria-hidden="true">✂ - - - - - - - - - - - - - - - -</div>
-
-          <article class="cmp">
-            <p class="tag">CHIẾN DỊCH 03</p>
             <h2>Trung Thu</h2>
             <p class="lead">Mang theo không khí rộn ràng của Tết Thiếu nhi, VIS đem những món quà nhỏ đến với các em nhỏ tại những ngôi chùa. Ở đó, Đội cùng nhau tổ chức một chương trình giao lưu với các tiết mục văn nghệ, những trò chơi đáng yêu và tận tay trao tặng những món quà nhỏ xinh đầy ý nghĩa. Mang theo những tiếng cười, VIS mong muốn mang đến một mùa Trung Thu thật trọn vẹn, ngập tràn năng lượng và tạo ra những kỷ niệm tuổi thơ trong veo nhất cho các em.</p>
             <div class="pics">
@@ -399,13 +375,39 @@ body{--pw:min(96vw,460px);--ph:calc(112px + env(safe-area-inset-bottom,0px))}
           <div class="cut" aria-hidden="true">✂ - - - - - - - - - - - - - - - -</div>
 
           <article class="cmp">
-            <p class="tag">CHIẾN DỊCH 04</p>
+            <p class="tag">CHIẾN DỊCH 02</p>
             <h2>Đông Ấm</h2>
             <p class="lead">Khi gió lạnh tràn về, chuyến xe Đông Ấm kéo dài 2 ngày 1 đêm của VIS lại mang theo ngọn lửa yêu thương lên đường. Đội gói những chiếc bánh chưng xanh nghĩa tình, trao tặng công trình thanh niên hay những món quà ý nghĩa đến với bà con. Đêm đến, sân khấu Gala văn nghệ sáng rực cùng tiếng cười nói giòn tan của trẻ em, biến cái rét buốt của mùa đông vùng cao thành ngọn lửa ấm sưởi ấm trái tim của tất cả mọi người.</p>
             <div class="pics">
               <figure class="pic wide" data-label="Ảnh Đông Ấm 1"><img src="da1.jpg" alt="Đông Ấm - ảnh 1" loading="lazy" onerror="this.remove()"></figure>
               <figure class="pic" data-label="Ảnh Đông Ấm 2"><img src="da2.jpg" alt="Đông Ấm - ảnh 2" loading="lazy" onerror="this.remove()"></figure>
               <figure class="pic" data-label="Ảnh Đông Ấm 3"><img src="da3.jpg" alt="Đông Ấm - ảnh 3" loading="lazy" onerror="this.remove()"></figure>
+            </div>
+          </article>
+
+          <div class="cut" aria-hidden="true">✂ - - - - - - - - - - - - - - - -</div>
+
+          <article class="cmp">
+            <p class="tag">CHIẾN DỊCH 03</p>
+            <h2>Mầm Xuân</h2>
+            <p class="lead">Bắt đầu một năm mới bằng sự sẻ chia và những nụ cười. Tại chiến dịch đây, VIS cùng nhau đến chùa Khai Nguyên, tự tay chuẩn bị những suất cơm cho bà con. Chuyến xe mùa xuân sau đó tiếp tục lăn bánh đến các trung tâm nuôi dưỡng trẻ em, mang theo những món quà nhỏ và tổ chức các trò chơi vui nhộn. Nhìn nụ cười rạng rỡ của các em nhỏ có hoàn cảnh đặc biệt, mùa xuân của VIS dường như trọn vẹn và ý nghĩa hơn bao giờ hết.</p>
+            <div class="pics">
+              <figure class="pic wide" data-label="Ảnh Mầm Xuân 1"><img src="mx1.jpg" alt="Mầm Xuân - ảnh 1" loading="lazy" onerror="this.remove()"></figure>
+              <figure class="pic" data-label="Ảnh Mầm Xuân 2"><img src="mx2.jpg" alt="Mầm Xuân - ảnh 2" loading="lazy" onerror="this.remove()"></figure>
+              <figure class="pic" data-label="Ảnh Mầm Xuân 3"><img src="mx3.jpg" alt="Mầm Xuân - ảnh 3" loading="lazy" onerror="this.remove()"></figure>
+            </div>
+          </article>
+
+          <div class="cut" aria-hidden="true">✂ - - - - - - - - - - - - - - - -</div>
+
+          <article class="cmp">
+            <p class="tag">CHIẾN DỊCH 04</p>
+            <h2>Hè Xanh</h2>
+            <p class="lead">Dấu ấn rực rỡ nhất của tuổi trẻ VIS chính là hành trình 7 ngày 6 đêm trọn vẹn cùng ăn, cùng ở, cùng làm với bà con ở những vùng quê xa xôi. Không ngại lấm lem bùn đất, VISer cùng nhau giúp đỡ bà con biết bao công việc. Để rồi trong đêm Gala cuối cùng, mọi mệt mỏi đều tan biến, chỉ còn lại những lời ca, điệu múa và những cái ôm lưu luyến chẳng nỡ rời xa giữa Đội, bà con và các em nhỏ nơi đây.</p>
+            <div class="pics">
+              <figure class="pic wide" data-label="Ảnh Hè Xanh 1"><img src="hx1.jpg" alt="Hè Xanh - ảnh 1" loading="lazy" onerror="this.remove()"></figure>
+              <figure class="pic" data-label="Ảnh Hè Xanh 2"><img src="hx2.jpg" alt="Hè Xanh - ảnh 2" loading="lazy" onerror="this.remove()"></figure>
+              <figure class="pic" data-label="Ảnh Hè Xanh 3"><img src="hx3.jpg" alt="Hè Xanh - ảnh 3" loading="lazy" onerror="this.remove()"></figure>
             </div>
           </article>
 
