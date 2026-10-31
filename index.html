@@ -44,7 +44,7 @@ body::before{content:"";position:fixed;inset:-40px;z-index:-1;pointer-events:non
   filter:drop-shadow(0 5px 15px rgba(0,0,0,.35));
 }
 .home-title{
-  margin:0 0 30px;color:#1b7a3a;font-family:"Dancing Script","Brush Script MT",cursive;
+  margin:0 0 30px;color:#1fb549;font-family:"Dancing Script","Brush Script MT",cursive;
   font-size:clamp(2.1rem,5vw,3rem);font-weight:700;font-style:italic;
   text-shadow:0 0 16px rgba(255,255,255,.95)
 }
@@ -490,10 +490,10 @@ if (location.hash && (location.hash === "#vis" || document.getElementById(locati
 
 /* Trang Lời cảm ơn: bấm "Tiếp tục" để chuyển lần lượt 4 đối tượng, hết thì quay lại đầu. */
 const thanksData = [
-  {label:"Cảm ơn thầy cô", text:["Chúng em cảm ơn thầy cô đã luôn dìu dắt, tin tưởng và tạo mọi điều kiện tốt nhất để Đội SVTN VIS có thể vững bước trưởng thành qua từng chặng đường.","Sự ủng hộ và những lời động viên từ thầy cô chính là bệ phóng vững chắc nhất cho nhiệt huyết thiện nguyện của chúng em trên hành trình tình nguyện"]},
-  {label:"Cảm ơn anh chị cựu", text:["Chúng em cảm ơn anh chị đã đặt những viên gạch đầu tiên, kiên trì xây dựng và vun đắp để mái nhà chung VIS ngày một vững chãi.","Ngọn lửa đam mê anh chị thắp lên ngày ấy vẫn đang được chúng em tự hào gìn giữ và tỏa sáng rực rỡ đến tận hôm nay."]},
-   {label:"Cảm ơn các khách mời", text:["Cảm ơn quý khách mời đã dành thời gian đến chung vui và chia sẻ cùng VIS ngày hôm nay.","Mong rằng trên những chặng đường lan tỏa yêu thương sắp tới, VIS vẫn sẽ luôn nhận được sự tin yêu và đồng hành từ mọi người."]},
-  {label:"Cảm ơn các thành viên", text:["Cảm ơn từng cá nhân đã chọn VIS làm nơi gửi gắm thanh xuân, cùng nhau đồng hành qua bao chuyến đi lấm lem bùn đất mà rộn rã tiếng cười.","Sự gắn kết và tinh thần tiếp nối của các bạn chính là nhịp đập làm nên sức sống mãnh liệt của Đội trong hành trình phía trước"]}
+  {label:"Cảm ơn thầy cô", text:["Chúng em cảm ơn thầy cô đã luôn dìu dắt, tin tưởng và tạo mọi điều kiện tốt nhất để Đội SVTN VIS có thể vững bước trưởng thành qua từng chặng đường.","Chúng em rất mong trong thời gian tới, Đội VEC cũng sẽ tiếp tục nhận được sự tin yêu, chỉ bảo và đồng hành từ thầy cô trên chặng đường mới."]},
+  {label:"Cảm ơn anh chị cựu", text:["Chúng em cảm ơn anh chị đã đặt những viên gạch đầu tiên, kiên trì xây dựng và vun đắp để mái nhà chung VIS ngày một vững chãi.","Bước sang một chương mới, mong rằng anh chị sẽ tiếp tục truyền lửa, dõi theo và ủng hộ nhiệt tình cho VEC để Đội ngày càng phát triển."]},
+   {label:"Cảm ơn các khách mời", text:["Cảm ơn quý khách mời đã dành thời gian đến chung vui và chia sẻ cùng VIS ngày hôm nay.","Mong rằng trên những chặng đường lan tỏa yêu thương sắp tới, không chỉ VIS mà cả Đội VEC cũng sẽ luôn vinh hạnh nhận được sự tin yêu và đồng hành từ mọi người."]},
+  {label:"Cảm ơn các thành viên", text:["Cảm ơn từng cá nhân đã chọn VIS làm nơi gửi gắm thanh xuân, cùng nhau đồng hành qua bao chuyến đi lấm lem bùn đất mà rộn rã tiếng cười.","Trong hành trình sắp tới, hy vọng các bạn sẽ giữ mãi tinh thần gắn kết này và tiếp tục kề vai sát cánh, ủng hộ hết mình cho những bước đi đầu tiên của VEC."]}
 ];
 let thanksIndex = 0;
 const tHead=document.getElementById("thanksHead"), tLabel=document.getElementById("thanksLabel"), tCard=document.getElementById("thanksCard"), tDots=[...document.querySelectorAll("#thanksDots i")];
