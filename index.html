@@ -128,7 +128,7 @@ body::before{content:"";position:fixed;inset:-40px;z-index:-1;pointer-events:non
   .timeline{gap:16px;padding-left:24px}
   .timeline::before{left:8px;top:16px;bottom:16px}
   .era{display:flow-root;padding:14px;border-radius:18px}
-  .era::before{left:-23px;top:30px;width:14px;height:14px;transform:none}
+  .era::before{left:-23px;top:50%;width:14px;height:14px;transform:translateY(-50%)}
   .era img{float:left;width:112px;margin:2px 14px 6px 0;border-radius:12px}
   .era-copy{display:block;padding:0}
   .era p.era-year{text-align:center;margin:0 0 6px}
@@ -148,7 +148,8 @@ body::before{content:"";position:fixed;inset:-40px;z-index:-1;pointer-events:non
 .vec-poster::before{content:attr(data-label)}
 .vec-poster img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .vec-tag{margin:0 0 8px;font-weight:700;letter-spacing:.14em;font-size:.85rem;color:var(--gold)}
-.vec-text{margin:0;font-size:1.05rem;line-height:1.8;font-weight:600;color:var(--fg);text-wrap:balance}
+.vec-text{margin:0 0 14px;font-size:.98rem;line-height:1.75;font-weight:500;color:var(--fg);text-align:justify;text-justify:inter-word}
+.vec-text:last-child{margin-bottom:0}
 @media(max-width:650px){.vec-wrap{margin-top:60px}.vec-card{padding:56px 16px 16px}.vec-logo{width:90px;height:90px;top:-45px}}
 
 /* ===== Lời cảm ơn ===== */
@@ -344,7 +345,9 @@ body{--pw:min(96vw,460px);--ph:calc(112px + env(safe-area-inset-bottom,0px))}
           <figure class="vec-poster" data-label="vec.jpg"><img src="1.gif" alt="Poster lễ ra mắt Đội VEC" onerror="this.remove()"></figure>
         </article>
         <p class="vec-tag">LỄ RA MẮT ĐỘI VEC</p>
-        <p class="vec-text">Một Đội mới sắp chào đời, và VIS tự hào là người anh em đồng hành. Mọi người hãy cùng theo dõi hành trình phía trước của VEC nhé, và đừng quên ủng hộ VEC như chúng ta đã từng làm cho VIS.</p>
+        <p class="vec-text">Tiền thân là Đội Sinh viên Tình nguyện VIS với chặng đường 10 năm rực rỡ, Đội Sinh viên Tình nguyện VEC trực thuộc Khoa Thương mại điện tử chính thức được thành lập sau khi tách khoa. Sự ra đời của VEC mang theo niềm tự hào sâu sắc, nhằm tiếp nối ngọn lửa nhiệt huyết và kế thừa trọn vẹn truyền thống tình nguyện tốt đẹp từ những thế hệ đi trước.</p>
+      <p class="vec-text">Mang theo ngọn lửa khát vọng cống hiến, VEC mang sứ mệnh lan tỏa những giá trị thiết thực đến cộng đồng qua các chiến dịch thường niên như Đông Ấm, Hè Xanh, Mầm Xuân và Trung Thu. Mỗi dấu chân đi qua không chỉ để lại nụ cười cho những hoàn cảnh khó khăn, mà còn giúp chính các thành viên nuôi dưỡng tâm hồn, biết trân quý cuộc sống và sống có trách nhiệm hơn mỗi ngày.</p>
+      <p class="vec-text">Hơn cả một đội tình nguyện, VEC tự hào là điểm tựa vững chắc, kết nối sinh viên hơn với các hoạt động của Khoa. Đây là một môi trường thực tế để các thành viên rèn luyện kỹ năng mềm và phát triển bản thân. Trên hành trình sắp tới, VEC sẽ không ngừng lớn mạnh, không ngừng chuyển mình để mỗi chiến dịch đi qua đều đọng lại những giá trị thật sâu sắc, kiến tạo nên một thế hệ sinh viên sống tử tế, bản lĩnh và đầy ắp đam mê.</p>
       </div>
     </div>
   </section>
