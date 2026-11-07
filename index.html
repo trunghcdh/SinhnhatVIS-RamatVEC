@@ -146,7 +146,8 @@ body::before{content:"";position:fixed;inset:-40px;z-index:-1;pointer-events:non
 .vec-logo{position:absolute;top:-50px;left:50%;transform:translateX(-50%);width:100px;height:100px;object-fit:contain;border-radius:50%;filter:drop-shadow(0 5px 15px rgba(0,0,0,.3))}
 .vec-poster{position:relative;margin:0;aspect-ratio:16/10;border-radius:18px;overflow:hidden;border:3px solid #fff;background:#e4e9f5;box-shadow:0 12px 30px rgba(43,57,144,.25);display:flex;align-items:center;justify-content:center;font-size:.8rem;color:#6b7391}
 .vec-poster::before{content:attr(data-label)}
-.vec-poster img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vec-poster img,.vec-poster video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vec-poster video{pointer-events:none}
 .vec-tag{margin:0 0 8px;font-weight:700;letter-spacing:.14em;font-size:.85rem;color:var(--gold)}
 .vec-text{margin:0 0 14px;font-size:.98rem;line-height:1.75;font-weight:500;color:var(--fg);text-align:justify;text-justify:inter-word}
 .vec-text:last-child{margin-bottom:0}
@@ -344,7 +345,7 @@ body{--pw:min(96vw,460px);--ph:calc(112px + env(safe-area-inset-bottom,0px))}
       <div class="vec-wrap">
         <article class="vec-card">
           <img class="vec-logo" src="logo2.png" alt="Logo VEC" onerror="this.style.display='none'">
-          <figure class="vec-poster" data-label="vec.jpg"><img src="vec.jpg" alt="Poster lễ ra mắt Đội VEC" onerror="this.remove()"></figure>
+          <figure class="vec-poster" data-label="vec.mp4"><video src="vec.mp4" muted loop playsinline preload="none" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" aria-label="Video lễ ra mắt Đội VEC" onerror="this.remove()"></video></figure>
         </article>
         <p class="vec-tag">LỄ RA MẮT ĐỘI VEC</p>
         <p class="vec-text">Tiền thân là Đội Sinh viên Tình nguyện VIS với chặng đường 10 năm rực rỡ, Đội Sinh viên Tình nguyện VEC trực thuộc Khoa Thương mại điện tử chính thức được thành lập sau khi tách khoa. Sự ra đời của VEC mang theo niềm tự hào sâu sắc, nhằm tiếp nối ngọn lửa nhiệt huyết và kế thừa trọn vẹn truyền thống tình nguyện tốt đẹp từ những thế hệ đi trước.</p>
@@ -475,6 +476,9 @@ function showScreen(id, updateHistory = true) {
 
   document.getElementById("home").dataset.mode = id === "vis" ? "vis" : "main";
   screens.forEach(screen => screen.classList.toggle("active", screen.id === realId));
+  document.querySelectorAll(".screen video").forEach(v => {
+  if (v.closest(".screen").id === realId) { v.play().catch(() => {}); } else { v.pause(); }
+});
   if (updateHistory) {
     try { history.pushState({screen:id}, "", id === "home" ? location.pathname + location.search : "#" + id); } catch (e) { /* khung xem trước không cho đổi URL, bỏ qua */ }
   }
